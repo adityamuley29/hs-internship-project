@@ -26,17 +26,17 @@ import "./CardContainer.css";
 
 export class CardContainer extends Component {
   constructor(props) {
-    super();
+    super(props);
     this.state = {
-      data: this.data,
+      data: [],
     };
   }
   async componentDidMount() {
     const url = "https://jsonplaceholder.typicode.com/posts";
     const responce = await fetch(url);
-    const data = await responce.json();
-    console.log(data);
-    this.setState({ data: data });
+    const data1 = await responce.json();
+    // console.log(data1);
+    this.setState({ data: data1 });
   }
   render() {
     return (
