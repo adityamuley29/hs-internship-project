@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/hs-internship-project/static/css/main.40f9bc61.chunk.css",
+    "main.js": "/hs-internship-project/static/js/main.be69e453.chunk.js",
+    "main.js.map": "/hs-internship-project/static/js/main.be69e453.chunk.js.map",
+    "runtime-main.js": "/hs-internship-project/static/js/runtime-main.16b1427a.js",
+    "runtime-main.js.map": "/hs-internship-project/static/js/runtime-main.16b1427a.js.map",
+    "static/js/2.6a9f036a.chunk.js": "/hs-internship-project/static/js/2.6a9f036a.chunk.js",
+    "static/js/2.6a9f036a.chunk.js.map": "/hs-internship-project/static/js/2.6a9f036a.chunk.js.map",
+    "static/js/3.33d13dcb.chunk.js": "/hs-internship-project/static/js/3.33d13dcb.chunk.js",
+    "static/js/3.33d13dcb.chunk.js.map": "/hs-internship-project/static/js/3.33d13dcb.chunk.js.map",
+    "index.html": "/hs-internship-project/index.html",
+    "static/css/main.40f9bc61.chunk.css.map": "/hs-internship-project/static/css/main.40f9bc61.chunk.css.map",
+    "static/js/2.6a9f036a.chunk.js.LICENSE.txt": "/hs-internship-project/static/js/2.6a9f036a.chunk.js.LICENSE.txt",
+    "static/media/CardContainer.css": "/hs-internship-project/static/media/background-img.45457f85.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.16b1427a.js",
+    "static/js/2.6a9f036a.chunk.js",
+    "static/css/main.40f9bc61.chunk.css",
+    "static/js/main.be69e453.chunk.js"
+  ]
+}
