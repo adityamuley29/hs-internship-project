@@ -1,59 +1,35 @@
-import React, { Component } from "react";
+import React, { useEffect, useState } from "react";
 import Card from "./Card";
 import "./CardContainer.css";
 
-// function CardContainer() {
+function CardContainer() {
+  const [data, setdata] = useState([]);
 
-//     componentDidMount()
-//     {
-//         const url = "https://jsonplaceholder.typicode.com/posts";
+  useEffect(() => {
+    async function fetchData() {
+      const response = await fetch(
+        "https://jsonplaceholder.typicode.com/posts"
+      );
+      response.json().then((response) => setdata(response));
+    }
 
-//     }
-//   return (
-//     <div id="container">
-//       <Card userId="2" title="myTitle" discription="myDesc" />
-//       <Card title="myTitle" discription="myDesc" />
-//       <Card title="myTitle" discription="myDesc" />
-//       <Card title="myTitle" discription="myDesc" />
-//       <Card title="myTitle"/>
-//       <Card title="myTitle"/>
+    fetchData();
+  }, []);
 
-//     </div>
-//   );
-// }
-
-// export default CardContainer;
-
-export class CardContainer extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      data: [],
-    };
-  }
-  async componentDidMount() {
-    const url = "https://jsonplaceholder.typicode.com/posts";
-    const responce = await fetch(url);
-    const data1 = await responce.json();
-    // console.log(data1);
-    this.setState({ data: data1 });
-  }
-  render() {
-    return (
-      <div id="container">
-        {this.state.data.map((element) => {
-          return (
-            <Card
-              userId={element.userId}
-              title={element.title}
-              body={element.body}
-              key={element.id}
-            />
-          );
-        })}
-      </div>
-    );
-  }
+  return (
+    <div id="container">
+      {data.map((element) => {
+        return (
+          <Card
+            userId={element.userId}
+            title={element.title}
+            body={element.body}
+            key={element.id}
+          />
+        );
+      })}
+    </div>
+  );
 }
 
 export default CardContainer;
