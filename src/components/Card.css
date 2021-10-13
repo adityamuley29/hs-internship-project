@@ -1,4 +1,47 @@
-#card {
-  max-width: 25rem;
-  margin: 20px 0px;
+* {
+  margin: 0;
+  padding: 0;
 }
+
+#card-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 25rem;
+  margin: 25px 0px;
+  flex: wrap;
+  
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(58, 58, 61, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.card-content {
+  position: relative;
+  margin: 30px;
+  overflow: hidden;
+  /* display: flex; */
+  justify-content: space-evenly;
+  align-items: center;
+  /* text-align: center; */
+  flex-direction: column;
+  color: white;
+  z-index: 1;
+
+  text-shadow: 2px 2px 8px black ;
+}
+.card-title,.card-userId
+{
+  transition: 0.5s;
+}
+.card-desc{
+  transition: 0.5s;
+  position: relative;
+  top: 15px;
+} 
